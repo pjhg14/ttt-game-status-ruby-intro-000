@@ -22,15 +22,15 @@ def won?()
 end
 
 def full?()
-  
+
 end
 
 def draw?()
-  
+
 end
 
 def over?()
-  
+
 end
 
 # Define your WIN_COMBINATIONS constant
