@@ -18,6 +18,7 @@ def won?(board)
       #puts win_combination
       return win_combination
     else
+      print board
       false
     end
   end
