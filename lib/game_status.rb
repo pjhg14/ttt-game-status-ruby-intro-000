@@ -13,11 +13,15 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
 
-    if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
-      print board
+    puts position_1
+    puts position_2
+    puts position_3
+
+    if position_1 == "X" && position_2 == "X" && position_3 == "X" 
       return win_combination
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+      
     else
-      #print board
       false
     end
   end
@@ -28,6 +32,7 @@ def full?(board)
 end
 
 def draw?(board)
+  print board
   full?(board) && won?(board).nil?
 end
 
