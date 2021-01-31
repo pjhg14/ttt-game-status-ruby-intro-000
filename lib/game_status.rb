@@ -44,7 +44,13 @@ def over?(board)
 end
 
 def winner(board)
+  winner = won?(board)
+  
+  if winner
+    return board[winner[0]]
+  end
 
+  nil
 end
 
 # Define your WIN_COMBINATIONS constant
