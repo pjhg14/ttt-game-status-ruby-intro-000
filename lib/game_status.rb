@@ -30,11 +30,12 @@ def draw?(board)
 end
 
 def over?(board)
-  won?(board) || full?(board) || draw?(board)
+  won?(board) != nil || full?(board) || draw?(board)
 end
 
 def winner(board)
-  board[won?(board)[0]]
+  win_char = won?(board)[0]
+  board[win_char]
 end
 
 # Define your WIN_COMBINATIONS constant
