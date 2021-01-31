@@ -26,11 +26,11 @@ def full?(board)
 end
 
 def draw?(board)
-  full?(board) && !won(board)
+  full?(board) && !won?(board)
 end
 
-def over?()
-
+def over?(board)
+  won?(board) || full?(board) || draw?(board)
 end
 
 # Define your WIN_COMBINATIONS constant
