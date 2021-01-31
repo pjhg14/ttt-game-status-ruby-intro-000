@@ -36,7 +36,7 @@ end
 
 def draw?(board)
   #print board
-  full?(board) && won?(board).nil?
+  full?(board) && !won?(board)
 end
 
 def over?(board)
