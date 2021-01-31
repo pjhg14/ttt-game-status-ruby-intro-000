@@ -44,7 +44,7 @@ def over?(board)
 end
 
 def winner(board)
-  
+
 end
 
 # Define your WIN_COMBINATIONS constant
