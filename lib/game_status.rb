@@ -39,7 +39,7 @@ def winner(board)
   end
 
   win_char = won?(board)[0]
-  board[win_char]
+  #board[win_char]
 end
 
 # Define your WIN_COMBINATIONS constant
