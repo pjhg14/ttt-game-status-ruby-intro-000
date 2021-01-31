@@ -16,7 +16,7 @@ def won?(board)
     if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
       return win_combination
     else
-      false
+      nil
     end
   end
 end
@@ -34,7 +34,7 @@ def over?(board)
 end
 
 def winner(board)
-
+  won?(board)[0]
 end
 
 # Define your WIN_COMBINATIONS constant
