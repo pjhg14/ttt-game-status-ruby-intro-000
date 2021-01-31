@@ -26,7 +26,7 @@ def full?(board)
 end
 
 def draw?(board)
-  full?(board) && !won?(board).nil?
+  full?(board) && won?(board).nil?
 end
 
 def over?(board)
