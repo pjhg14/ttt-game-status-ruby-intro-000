@@ -37,7 +37,7 @@ def winner(board)
   if won?(board).nil?
     return nil
   end
-  
+
   win_char = won?(board)[0]
   board[win_char]
 end
