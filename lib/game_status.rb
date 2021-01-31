@@ -17,10 +17,10 @@ def won?(board)
     puts position_2
     puts position_3
 
-    if position_1 == "X" && position_2 == "X" && position_3 == "X" 
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combination
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-      
+
     else
       false
     end
