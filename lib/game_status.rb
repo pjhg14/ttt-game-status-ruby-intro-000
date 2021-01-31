@@ -13,9 +13,11 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
 
+    print ","
     print "|" + position_1 + "|"
     print "|" + position_2 + "|"
     print "|" + position_3 + "|"
+    print ","
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combination
