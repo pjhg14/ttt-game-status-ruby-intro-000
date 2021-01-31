@@ -3,7 +3,7 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-def won?()
+def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
@@ -26,7 +26,7 @@ def full?(board)
 end
 
 def draw?(board)
-
+  full?(board) && !won(board)
 end
 
 def over?()
